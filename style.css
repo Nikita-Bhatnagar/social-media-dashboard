@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s;
+}
+body {
+  background-color: hsl(230, 17%, 14%);
+  font-family: "Inter", sans-serif;
+  color: hsl(228, 34%, 66%);
+  height: 100vh;
+
+  margin: auto;
+}
+.background-color {
+  background-color: hsl(232, 19%, 15%);
+  height: 230px;
+  border-radius: 0 0 14px 14px;
+  width: 100vw;
+}
+.container {
+  position: relative;
+  bottom: 14rem;
+  padding: 30px 100px 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.6vw 15px 2.6vw;
+}
+.heading h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 26px;
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+.heading h5 {
+  color: hsl(228, 34%, 66%);
+  font-size: 14px;
+  font-weight: 700;
+}
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-toggler {
+  height: 25px;
+  width: 50px;
+  background-image: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  border-radius: 25px;
+}
+.toggle-circle {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: hsl(232, 19%, 15%);
+  float: left;
+  margin-left: 3px;
+  margin-top: 3px;
+  transition: all 0.3s;
+}
+.toggle-circle:hover {
+  background-color: hsl(228, 26%, 31%);
+}
+.mode {
+  color: hsl(228, 34%, 66%);
+  padding-right: 8px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.dashboard-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.col {
+  background-color: hsl(228, 28%, 20%);
+  margin: 3px;
+  border-radius: 6px !important;
+}
+.col:hover {
+  background-color: hsl(228, 26%, 31%);
+}
+.dashboard-row .col {
+  min-width: 260px;
+  padding: 25px 45px;
+  text-align: center;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+.dashboard-row .col-1 {
+  border-top: 4px solid hsl(208, 92%, 53%);
+}
+.dashboard-row .col-2 {
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+.dashboard-row .border {
+  height: 4px;
+  width: 260px;
+  background-image: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+  border-radius: 6px;
+  position: relative;
+  bottom: 23px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.dashboard-row .col-3 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.dashboard-row .col-4 {
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+.icon-and-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  padding-right: 0.4rem;
+}
+.name {
+  font-size: 14px;
+  font-weight: 700;
+}
+.dashboard-row .stat {
+  font-size: 48px;
+  font-weight: 700;
+  padding: 20px 0 6px;
+  color: hsl(0, 0%, 100%);
+}
+.dashboard-row p {
+  font-size: 15px;
+  letter-spacing: 0.3rem;
+  padding-bottom: 23px;
+}
+.dashboard-row span {
+  color: hsl(163, 72%, 41%);
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+  top: 2px;
+}
+.dashboard-row .col-4 span {
+  color: hsl(356, 69%, 56%);
+}
+.overview h2 {
+  padding: 20px 3rem 15px 2.2rem;
+  font-weight: 700;
+  font-size: 22px;
+  color: hsl(0, 0%, 100%);
+}
+.overview-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.overview-row .col {
+  padding: 20px 25px;
+  width: 260px;
+  margin-bottom: 20px;
+}
+.row-1,
+.row-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row-1 {
+  padding-bottom: 25px;
+}
+.row-1 .likes {
+  font-size: 14px;
+  font-weight: 700;
+}
+.row-2 .over-stat {
+  font-size: 26px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.row-2 .change {
+  color: hsl(163, 72%, 41%);
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+  top: 2px;
+}
+.overview-row-1 .col-o-2 .change,
+.overview-row-2 .col-o-3 .change,
+.overview-row-2 .col-o-4 .change {
+  color: hsl(356, 69%, 56%);
+}
+@media (max-width: 1304px) {
+  .dashboard-row .col,
+  .overview-row .col {
+    min-width: 37vw;
+  }
+  .dashboard-row .border {
+    width: 37vw;
+  }
+  .heading-row,
+  .overview h2 {
+    padding-left: 3.2vw;
+    padding-right: 3.2vw;
+  }
+}
+@media (max-width: 1000px) {
+  .dashboard-row .col,
+  .overview-row .col {
+    min-width: 42vw;
+  }
+  .dashboard-row .border {
+    width: 42vw;
+  }
+  .heading-row,
+  .overview h2 {
+    padding-left: 4vw;
+    padding-right: 4.2vw;
+  }
+  .container {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+}
+
+@media (max-width: 752px) {
+  .dashboard-row .col,
+  .overview-row .col {
+    min-width: 90vw;
+    margin: 12px auto;
+  }
+  .overview-row .col {
+    margin: 8px auto;
+  }
+  .dashboard-row .border {
+    width: 90vw;
+  }
+  .heading-row {
+    display: block;
+  }
+  .heading {
+    padding-bottom: 50px;
+  }
+  .container {
+    padding: 30px 15px;
+  }
+  .theme-toggle {
+    justify-content: space-between;
+  }
+}
+
+/*light theme classes*/
+.light-background-top {
+  background-color: hsl(225, 100%, 98%);
+}
+.light-background {
+  background-color: hsl(0, 0%, 100%);
+}
+.light-col-background {
+  background-color: hsl(227, 47%, 96%);
+}
+.light-col-background:hover {
+  background-color: hsl(227, 13%, 86%);
+}
+.light-text-color {
+  color: hsl(228, 12%, 44%) !important;
+}
+.light-text-color-darker {
+  color: hsl(230, 17%, 14%) !important;
+}
+.light-theme-toggler {
+  background-color: hsl(230, 22%, 74%);
+  background-image: none;
+  transition: all 0.5s;
+}
+.light-theme-toggler:hover {
+  background-color: hsl(203, 89%, 53%);
+}
+.light-toggle-circle {
+  background-color: hsl(225, 100%, 98%);
+  float: right;
+  margin-right: 3px;
+  transition: all 0.5s;
+}
+.light-toggle-circle:hover {
+  background-color: hsl(225, 100%, 98%);
+}
